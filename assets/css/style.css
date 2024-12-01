@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Archivo Narrow", sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* common css end  */
+
+
+.section-title {
+  text-align: center;
+}
+.lookbook-area {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+.section-title {
+    text-align: center;
+}
+.section-title .lookbook-title {
+  font-size: 52px;
+    text-transform: capitalize;
+}
+
+
+
+.lookbook-wrapper {
+	padding-top: 150px;
+	display: grid;
+	grid-template-columns: repeat(3,auto);
+	padding-right: 35px;
+	padding-left: 35px;
+	grid-gap: 30px;
+}
+.lookbook-text h4 {
+	font-size: 24px;
+	font-weight: 600;
+    margin-bottom: 7px;
+}
+
+.lookbook-img {
+	margin-bottom: 25px;
+}
+.lookbook-img img{
+    width: 100%;
+}
+.lookbook-text {
+  text-align: center;
+}
+.lookbook-link span > a {
+	text-transform: capitalize;
+	color: #000;
+	display: inline-block;
+	margin-top: 20px;
+    position: relative;
+    font-size: .9375rem;
+}
+
+.lookbook-link span > a::before {
+	position: absolute;
+	content: '';
+	width: 100%;
+	height: 1px;
+	background: rgba(26, 26, 26, 0.4);
+	bottom: 0;
+	left: 0;
+}
+.lookbook-link span > a::after{
+    position: absolute;
+	content: '';
+	width: 0%;
+	height: 1px;
+	background: #000;
+	bottom: 0;
+	left: 0;
+    transition: .3s;
+}
+.lookbook-link span > a:hover::after {
+    width: 100%;
+}
+
+
+
+
+
+
+
